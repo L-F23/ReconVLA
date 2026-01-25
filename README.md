@@ -150,11 +150,12 @@ bash scripts/train_vla/finetune.sh
 Below is an explanation of the most commonly adjusted training parameters：
 - `model_name_or_path`: Path or name of the pre-trained language model.
 - `data_path`: Path to the JSON file containing training data.
+- `mm_pixel_decoder`: The pretrained VAE used is [https://huggingface.co/John6666/flux1-dev-fp8-flux/tree/main/vae]
 - `action_stat`: Path to action normalization statistics.
 - `num_train_epochs`: Size of action discretization bins.
 - `per_device_train_batch_size`: Training batch size per GPU.
 - `image_aspect_ratio`: Image processing method.
-- `num_train_epochs`: otal number of training rounds.
+- `num_train_epochs`: total number of training rounds.
 - `use_diffusion_head`:use difussion head for decode
 
 ## 🔬 Evaluation
@@ -180,7 +181,7 @@ conda activate caivin_venv
 cd reconvla/calvin/calvin_agent/evaluation
 bash evaluate_policy_multiserver.sh
 ```
-Start model server on you own port (here is 9097)，
+Start model server on your own port (here is 9097)，
 CUDA_VISIBLE_DEVICES specifies the number of GPUs (e.g., if you have two GPUs, it would be 0,1).
 
 Below is an explanation of the most commonly adjusted parameters:
