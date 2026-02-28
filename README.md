@@ -6,7 +6,7 @@
     <img alt="project" src="https://img.shields.io/badge/ReconVLA-blue?label=Project&color=blue" height="25" />
 </a>
 <a href="https://huggingface.co/zzyzyzy/ReconVLA" target="_blank">
-    <img alt="HF Model: ReconVLA" src="https://img.shields.io/badge/ReconVLA-yellow?label=Model(consistent-training-free)&color=ffd400" height="25" />
+    <img alt="HF Model: ReconVLA" src="https://img.shields.io/badge/ReconVLA-yellow?label=Model&color=ffd400" height="25" />
 </a>
 
 We present ReconVLA, an implicit grounding paradigm for Vision-Language-Action models that reconstructs gaze regions to focus visual attention, achieving precise manipulation and strong generalization with only 100k+ trajectories. Key contributions include:
