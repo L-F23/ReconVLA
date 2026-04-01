@@ -384,7 +384,7 @@ def main():
     else:
         with open(args.question_file, "r", encoding="utf-8") as f:
             data = json.load(f)
-    data=data[NUM_SEQUENCES:]
+    data=data[:NUM_SEQUENCES]
     questions = get_chunk(data, args.num_chunks, args.chunk_idx)
     # questions=None
     # evaluate a custom model
